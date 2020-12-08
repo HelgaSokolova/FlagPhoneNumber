@@ -51,6 +51,7 @@
 		0D79D5E22397CB3600DD3E14 /* FPNOBJCCountryKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D79D5DC2397CB3600DD3E14 /* FPNOBJCCountryKey.swift */; };
 		0D79D5E32397CB3600DD3E14 /* FPNUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D79D5DD2397CB3600DD3E14 /* FPNUtils.swift */; };
 		0DA9CA0B2293E39500723B96 /* FlagPhoneNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D8C7134229296D40026E0C7 /* FlagPhoneNumber.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA1F7E48257FCB4300F5BC8F /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1F7E47257FCB4300F5BC8F /* CoreTelephony.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,6 +101,7 @@
 		0D8C7134229296D40026E0C7 /* FlagPhoneNumber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlagPhoneNumber.h; sourceTree = "<group>"; };
 		0D8C7135229296D40026E0C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DF48B3922917047006AB39C /* FlagPhoneNumber.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlagPhoneNumber.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA1F7E47257FCB4300F5BC8F /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA1F7E48257FCB4300F5BC8F /* CoreTelephony.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +121,7 @@
 			children = (
 				0DF48B1422916F9F006AB39C /* Sources */,
 				0D0EA1DB22913E90002D7D42 /* Products */,
+				FA1F7E46257FCB4300F5BC8F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -219,6 +223,14 @@
 				0D192FF22293078B002583B1 /* Resources */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		FA1F7E46257FCB4300F5BC8F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA1F7E47257FCB4300F5BC8F /* CoreTelephony.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
